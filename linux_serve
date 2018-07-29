@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export PORT=8088
+./broken-hashserve_linux
