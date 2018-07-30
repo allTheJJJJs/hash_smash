@@ -47,12 +47,13 @@ If this harness is not true to that vision, then open an [Issue](https://github.
 #### Install IDE
 
 Grab an IDE of your choice:
+
  [Atom](https://atom.io/) 
- [<img src="./assets/atom.png">](https://atom.io)
+ [<img src="./assets/atom.png" width=60%>](https://atom.io)
  
 
  [Visual Studio Code](https://code.visualstudio.com/)
- [<img src="./assets/vscode.png">](https://code.visualstudio.com/)
+ [<img src="./assets/vscode.png" width=60%>](https://code.visualstudio.com/)
 
 #### Install Node.js
 
@@ -62,8 +63,8 @@ For `Linux`, use the following commands:
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
-___
 ```
+___
 For` macOS`, use either:
 ```bash
 curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
@@ -97,7 +98,7 @@ npm install
 
 ## How to Use
 
-You will need to assign the ENVIRONMENT variable with your current env: windows, linux, or mac.
+You will need to assign the `ENVIRONMENT` variable with your current env: windows, linux, or mac.
 
 From your terminal, while inside the project directory, simply type:
 
