@@ -48,7 +48,7 @@ If this harness is not true to that vision, then open an [Issue](https://github.
 
 Grab an IDE of your choice:
  [Atom](https://atom.io/) 
- [<img src="./assets/atom.svg">](https://atom.io)
+ [<img src="./assets/atom.png">](https://atom.io)
  
 
  [Visual Studio Code](https://code.visualstudio.com/)
@@ -62,6 +62,7 @@ For `Linux`, use the following commands:
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
+___
 ```
 For` macOS`, use either:
 ```bash
@@ -71,6 +72,7 @@ or the simpler
 ```bash
 brew install node
 ```
+___
 For `Windows`, use the Windows Installer from nodejs.org, found [HERE](https://nodejs.org/en/), or `scoop` in `PowerShell`:
 ```
 scoop install nodejs
