@@ -4,8 +4,7 @@
   "description": "API Test Automation Solution",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.js",
-    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+    "test": "mocha test/**/*.js"
   },
   "repository": {
     "type": "git",
