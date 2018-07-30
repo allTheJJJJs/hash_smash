@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <img src="./assets/broken-hashtag.png" width="500">
+  <img src="./assets/broken-hashtag.png" width="700">
   <br>
-  <img src="./assets/title.png" width=100%>
+  <img src="./assets/title.png" width=60%>
   <br>
 </h1>
 
@@ -25,10 +25,11 @@
 </p>
 
 ![Alt Text](http://recordit.co/IuMeJ1zcrm.gif)
+<h4 align="center">(Click to embiggen)</h4>
 
 ## Introduction
 
-This test automation harness was designed to solve the challenges of developing and executing tests against the hash-serve application across the Windows, Linux, and MacOs platforms.
+This test automation harness was designed to solve the challenges of developing and executing tests against the hash-serve application across the Windows, Linux, and macOs platforms.
 
 The goal for this harness is to handle environment configurations and setup for the user so you can quickly and easily develop your automation tests, with a focus on usability and the user-experience.
 
@@ -39,19 +40,30 @@ If this harness is not true to that vision, then open an [Issue](https://github.
 - Supports development and testing in Windows, Linux, and macOS
 - Handles test configuration and execution from a single command
 - Containerized Docker Solution (Coming Soon...)
+- AWS testing (Coming Soon...)
 
 ## Setup
 
-Grab an IDE of your choice, I prefer [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/).
+#### Install IDE
+
+Grab an IDE of your choice:
+ [Atom](https://atom.io/) 
+ [<img src="./assets/atom.svg">](https://atom.io)
+ 
+
+ [Visual Studio Code](https://code.visualstudio.com/)
+ [<img src="./assets/vscode.png">](https://code.visualstudio.com/)
+
+#### Install Node.js
 
 Next, you'll need to install Node.js.
 
-For Linux, use the following commands:
+For `Linux`, use the following commands:
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
-For macOS, use either:
+For` macOS`, use either:
 ```bash
 curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
 ```
@@ -59,11 +71,11 @@ or the simpler
 ```bash
 brew install node
 ```
-For Windows, use the Windows Installer from nodejs.org, found [HERE](https://nodejs.org/en/), or `scoop` in `PowerShell`:
+For `Windows`, use the Windows Installer from nodejs.org, found [HERE](https://nodejs.org/en/), or `scoop` in `PowerShell`:
 ```
 scoop install nodejs
 ```
-
+#### Clone the Repo
 Now clone or download the repo, like so:
 
 ```bash
@@ -73,6 +85,13 @@ git clone git@github.com:allTheJJJJs/hash_bash.git
 Or click on the pretty green download button!
 
 <img src="./assets/git-download.png" />
+
+#### Install NPM Modules
+
+Lastly, let's install all the project dependencies! You can install them from the `terminal` or `command line`, like so:
+```bash
+npm install
+```
 
 ## How to Use
 
