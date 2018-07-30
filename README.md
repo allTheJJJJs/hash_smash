@@ -133,10 +133,14 @@ Lastly was `System Testing`, to see if the test automation solution and broken-h
 
 Given more time to test, and the ability to ask Product questions about this application, I'd like to know more about the following:
 
-Performance - What should we expect the response time to maintain at a minimum? Should request throttling be present?
-Load - How should this application respond under very high load?
-Stress - How should this application respond when fewer resources are available to process requests(fewer threads, server resources, etc.)?
-Integration - What applications should this integrate with? How should this communicate with other microservices or a front-end application?
-Usability - Is this user-friendly and easily consumed? Should we want more than merely the number of requests and avg. time? Should the number of requests be limited to ONLY successful calls(it currently increments TotalRequests even if the response is considered Malformed Content)?
+`Performance` - What should we expect the response time to maintain at a minimum? Should request throttling be present?
+
+`Load` - How should this application respond under very high load?
+
+`Stress` - How should this application respond when fewer resources are available to process requests(fewer threads, server resources, etc.)?
+
+`Integration` - What applications should this integrate with? How should this communicate with other microservices or a front-end application?
+
+`Usability` - Is this user-friendly and easily consumed? Should we want more than merely the number of requests and avg. time? Should the number of requests be limited to ONLY successful calls(it currently increments TotalRequests even if the response is considered Malformed Content)?
 
 I also would test the 'shutdown' functionality more - time constraints limited the number of automated tests around processing requests in shutdown process, among others.
