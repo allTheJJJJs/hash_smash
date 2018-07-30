@@ -49,10 +49,12 @@ If this harness is not true to that vision, then open an [Issue](https://github.
 Grab an IDE of your choice:
 
  [Atom](https://atom.io/) 
+
  [<img src="./assets/atom.png" width=60%>](https://atom.io)
  
 
  [Visual Studio Code](https://code.visualstudio.com/)
+ 
  [<img src="./assets/vscode.png" width=60%>](https://code.visualstudio.com/)
 
 #### Install Node.js
