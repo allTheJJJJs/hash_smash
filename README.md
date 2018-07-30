@@ -52,9 +52,9 @@ Grab an IDE of your choice:
 
  [<img src="./assets/atom.png" width=60%>](https://atom.io)
  
-
+___
  [Visual Studio Code](https://code.visualstudio.com/)
- 
+
  [<img src="./assets/vscode.png" width=60%>](https://code.visualstudio.com/)
 
 #### Install Node.js
@@ -117,10 +117,26 @@ ENVIRONMENT=windows npm test
 
 That's it! Now go test some stuff!
 
-## Test Strategy
+## Test Plan
 
-Coming Soon...
+I chose to start with `Functional Testing` around the reqs minimum viable project. The tests 'Minimum Valid Request' were designed to address this functional testing.
+
+I then focused on `Negative Testing` around the basic functionality to determine if failures were graceful, followed by functional edge cases.
+
+Next was `Security Testing`, like being able to pass query params to see how they are handled. It's important to see if they are processed, rejected,sanitized out gracefully, etc. If they are processed, then sql-injection and xss are serious concerns. Because there were no credentials required or passed to allow or reject the calls, I couldn't test anything around 401 and 403 failures - this should be addressed before going to prod.
+
+I then looked at`Acceptance Testing` to ensure, though the product may be functionally sound, it meets the product goals outlined in the reqs. I wrote a few tests targeting acceptance, though not necessarily functionality. For example, though there's a good chance the Base64 encoded charset is SHA512, since it's 512 bits long, it's certainly not a UTF-8 charset, which is likely the goal of the app. This would need further clarification before going to prod.
+
+Lastly was `System Testing`, to see if the test automation solution and broken-hashserve worked across the multiple platforms for which they were designed.
 
 ## Additional Considerations
 
-Coming Soon...
+Given more time to test, and the ability to ask Product questions about this application, I'd like to know more about the following:
+
+Performance - What should we expect the response time to maintain at a minimum? Should request throttling be present?
+Load - How should this application respond under very high load?
+Stress - How should this application respond when fewer resources are available to process requests(fewer threads, server resources, etc.)?
+Integration - What applications should this integrate with? How should this communicate with other microservices or a front-end application?
+Usability - Is this user-friendly and easily consumed? Should we want more than merely the number of requests and avg. time? Should the number of requests be limited to ONLY successful calls(it currently increments TotalRequests even if the response is considered Malformed Content)?
+
+I also would test the 'shutdown' functionality more - time constraints limited the number of automated tests around processing requests in shutdown process, among others.
