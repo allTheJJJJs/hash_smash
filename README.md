@@ -119,7 +119,7 @@ That's it! Now go test some stuff!
 
 ## Test Plan
 
-I chose to start with `Functional Testing` around the reqs minimum viable project. The tests 'Minimum Valid Request' were designed to address this functional testing.
+I chose to start with `Functional Testing` around the reqs minimum viable product. The tests 'Minimum Valid Request' were designed to address this functional testing.
 
 I then focused on `Negative Testing` around the basic functionality to determine if failures were graceful, followed by functional edge cases.
 
